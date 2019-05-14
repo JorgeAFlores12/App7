@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>  
+ <widget xmlns   = "http://www.w3.org/ns/widgets"  
+     xmlns:gap = "http://phonegap.com/ns/1.0"  
+     id = "com.phonegap.app6"  
+     version = "1.0.0">  
+	 
+   <name> App7 Aplicacion que muestra otras apps </name>  
+   
+   <description> Aplicacion que muestra otras apps</description>  
+   
+   <author href="https://build.phonegap.com" email="cb16.flores.cordero.jorge@gmail.com">  
+      Jorge Alberto Flores Cordero
+   </author>  
+    
+   <!-- Personaliza la aplicacion y plataforma  -->  
+   <preference name="orientation"        value="default"/>    
+  <!-- <preference name="orientation" value="portrait" /> 
+   <preference name="orientation"   value="landscape" />-->   
+   <preference name="target-device" value="universal" />      
+   <preference name="android-installLocation"  value="auto" />  
+   <preference name="permissions" value="INTERNET" />
 
-<widget xmlns = "http://www.w3.org/ns/widgets"
-xmlns: gap = "http://phonegap.com/ns/1.0"
-id ="com.phonegap.app7"
-version ="1.0.0">
-
-<name> App7 Mostrar Apps</name>
-
-<descripcion>
-Aplicacion que muestra a otras aplicaciones
-</ descripción >
-
-<author  href = " https://build.phonegap.com" email=" cb16.flores.cordero.jorge@gmail.com " >
-Jorge Alberto Flores Cordero
-</ autor >
-
-<!--Personaliza la aplicacion y plataforma-->
-<!-- <preference name=" orientación " 	value = "default"/>-->
-<preference name= "orientation" value="portrait"/>
-<!--<preference name="orientation"	value="landscape" />-->
-<preference name="target-device" value="universal" />
-<preference name="fullscreen"	value="true"/>
-<preference name="android-installLocation" value="auto"/>
-<preference name="permissions" value="INTERNET"/>
-
-<!-- Plugins -->
-<!--Core plugins -->
+   <!-- Plugins --> 
+   <!-- Core plugins -->  
 <plugin name="cordova-plugin-device" spec="~1.1.4" />
 <plugin name="cordova-plugin-vibration" spec="~2.1.3" />
-<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />
+<plugin name="cordova-plugin-dialogs" spec="~1.3.1" />   
 
-<!-- <plugin name="cordova-plugin-geolocation" source="npm"/>-->
- <!--third part plugins-->
-
-<!--Colocar icono app-->
-
-<icon src="res/android/mdpi.png"/>
-
+<!-- <plugin name="cordova-plugin-geolocation" source="npm" /> -->
+<!--Para accesar a paginas de internet-->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/> 
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/> 
+<plugin name="cordova-plugin-whitelist" source="npm"/>
+<!-- Colocar icono app -->
+<icon src="res/android/mdpi.png" />
+  
 </widget>
+
