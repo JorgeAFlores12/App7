@@ -4,7 +4,7 @@ $(document).ready(function (e) {
 	document.addEventListener("deviceready",function(){
 		
 $('#izquierda').on("swipeleft",function(){
-	navigator.notification.alert("Deslizó a la izquierda",function(){"Aplicacion ","Aceptar"});
+	navigator.notification.alert("Deslizó a la izquierda",function(){"Aplicación ","Aceptar"});
 	});
 	
 	$('#derecha').on("swiperight",function(){
